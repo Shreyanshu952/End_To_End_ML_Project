@@ -2,4 +2,6 @@
 1. Click on Source Control (Ctrl+Shift+G)
 2. Click on + sign to add the pending files to the staging area.
 3. Write commit message and then click to commit.
-
+4. Click on Publish branch.
+5. Select "Publish to GitHub public repository" (or private if you want to make your repository private).
+6. Repository has been created with the same name as the project folder name.
