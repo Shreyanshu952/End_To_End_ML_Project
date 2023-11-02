@@ -1,0 +1,5 @@
+# Creating repository directly from VS-Code without using any git commands
+1. Click on Source Control (Ctrl+Shift+G)
+2. Click on + sign to add the pending files to the staging area.
+3. Write commit message and then click to commit.
+
