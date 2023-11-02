@@ -5,3 +5,4 @@
 4. Click on Publish branch.
 5. Select "Publish to GitHub public repository" (or private if you want to make your repository private).
 6. Repository has been created with the same name as the project folder name.
+7. Next time click on + sign and write commit reason and click on Sync Changes.
