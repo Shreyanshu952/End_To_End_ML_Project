@@ -6,3 +6,14 @@
 5. Select "Publish to GitHub public repository" (or private if you want to make your repository private).
 6. Repository has been created with the same name as the project folder name.
 7. Next time click on + sign and write commit reason and click on Sync Changes.
+
+
+# Why we require a LICENSE in git repository in an open source project?
+The goal of GitHub's open source licensing efforts is to provide a starting point to help you make an informed choice. GitHub displays license information to help users get information about open source licenses and the projects that use them. We hope it helps, but please keep in mind that we’re not lawyers and that we make mistakes like everyone else. For that reason, GitHub provides the information on an "as-is" basis and makes no warranties regarding any information or licenses provided on or through it, and disclaims liability for damages resulting from using the license information. If you have any questions regarding the right license for your code or any other legal issues relating to it, it’s always best to consult with a professional.
+
+# SHELL SCRIPTING
+1. Create init_setup.sh file (U can write any name but it is a industrial practice.)
+Whatever commands like pip install -r requirements.txt, creating an environment etc. we write in our git bash terminal, those commands are written in "init_setup.sh" file in the form of script and then all the commands are executed simultaneously.
+No need to write every command manually.
+This Shell Script is only applicable for Linux and not for Windows.
+How to run shell script: write bash file_name (here init_setup.sh) and press enter.
