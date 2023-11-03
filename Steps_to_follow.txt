@@ -23,3 +23,7 @@ Whatever commands like pip install -r requirements.txt, creating an environment 
 No need to write every command manually.
 This Shell Script is only applicable for Linux terminal and not for Windows (cmd) terminal.
 How to run shell script: write bash file_name (here init_setup.sh) and press enter.
+
+# Installing local packages steps:
+1. write python setup.py install in gitbash terminal and press enter
+2. write "-e ." in requirements.txt file and write pip install -r requirements.txt in gitbash terminal and press enter.
