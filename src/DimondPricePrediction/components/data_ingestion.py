@@ -24,16 +24,16 @@ from dataclasses import dataclass
 
 # creating configuration class for saving datasets into artifacts folder
 class DataIngestionConfig:
-    raw_data_path = os.path.join("artifacts", "raw.csv")
-    train_data_path = os.path.join("artifacts", "train.csv")
-    test_data_path = os.path.join("artifacts", "test.csv")
+    raw_data_path:str = os.path.join("artifacts", "raw.csv")
+    train_data_path:str = os.path.join("artifacts", "train.csv")
+    test_data_path:str = os.path.join("artifacts", "test.csv")
 
 
 # creating a class for loading dataset
 class DataIngestion:
     def __init__(self):
         #creating an instance for DataIngestionConfig class
-        ingestion_config = DataIngestionConfig()
+        self.ingestion_config = DataIngestionConfig()
 
     def initiate_data_ingestion(self):
         logging.info("data ingestion started")
@@ -67,4 +67,4 @@ class DataIngestion:
 
         except Exception as e:
             logging.info("Exception occured at data ingestion stage")
-            pass
+            raise customexception(e, sys)
