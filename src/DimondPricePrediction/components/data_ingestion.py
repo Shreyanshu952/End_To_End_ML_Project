@@ -20,7 +20,6 @@ from sklearn.model_selection import train_test_split
 import os
 import sys
 from pathlib import Path
-from dataclasses import dataclass
 
 # creating configuration class for saving datasets into artifacts folder
 class DataIngestionConfig:
