@@ -11,6 +11,7 @@ from src.DimondPricePrediction.exception import customexception
 
 from sklearn.metrics import r2_score
 
+# defining a function for saving pickle files in artifact folder
 def save_object(file_path, obj):
     try:
         dir_path = os.path.dirname(file_path)
@@ -25,6 +26,7 @@ def save_object(file_path, obj):
         raise customexception(e, sys)
     
 
+# creating a function for model evaluation
 def evaluate_model(X_train,y_train,X_test,y_test,models):
     try:
         report = {}
@@ -56,3 +58,13 @@ def evaluate_model(X_train,y_train,X_test,y_test,models):
         logging.info("Exception occured at training, evaluating and prection stage of the model")
         raise customexception(e, sys)
 
+
+# defining a function for loading pickle files for predicting using our best model
+def load_object(file_path):
+    try:
+        with open(file_path, "rb") as file_obj:
+            return pickle.load(file_obj)
+        
+    except Exception as e:
+        logging.info("Exception occured at loading pickle file object")
+        raise customexception(e, sys)
