@@ -65,7 +65,7 @@ class PredictPipeline:
     # creating a definition for custom data prediction
     def predict(self, features):
         try:
-            preprocessor_pickle_path = os.path.join("artifacts", "preprocessor.pkl")
+            preprocessor_pickle_path = os.path.join("artifacts", "processor.pkl")
             model_pickle_path = os.path.join("artifacts", "model.pkl")
 
             #loading the preprocessor and model pickle files
@@ -74,7 +74,7 @@ class PredictPipeline:
             logging.info("Preprocessor and Model pickle files loaded")
 
             # tranforming the input features (custom data)
-            transformed_data = preprocessor_pickle.tranform(features)
+            transformed_data = preprocessor_pickle.transform(features)
             logging.info("Features has been tranformed")
 
             # predicting using our best model
