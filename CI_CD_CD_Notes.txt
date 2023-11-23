@@ -1,0 +1,57 @@
+Q1. What is github actions?
+Ans1. GitHub Actions is a feature of GitHub that allows you to automate various tasks in your software development workflow. It enables you to define custom workflows, which are sets of automated steps that can be triggered by events in your GitHub repository, such as pushing code, opening pull requests, or releasing a new version.
+
+Key features of GitHub Actions include:
+1. Workflow Automation: 
+GitHub Actions allows you to automate various tasks, such as building and testing your code, deploying applications, or running linters and other code quality checks.
+
+2. Event-Driven: 
+Workflows can be triggered by events in your GitHub repository, such as pushes to specific branches, pull request creation or updates, issue comments, and more.
+
+3. Docker Containers: 
+Workflows can run in isolated Docker containers, ensuring a consistent and reproducible environment for your automation tasks.
+
+4. Extensibility: 
+GitHub Actions supports a wide range of pre-built actions that you can use in your workflows, and you can also create custom actions to suit your specific needs.
+
+Using GitHub Actions, you can create efficient and automated CI/CD (Continuous Integration/Continuous Deployment) pipelines, reducing manual intervention and streamlining your development and release processes.
+
+######################################################################################################################################
+
+Q2. What is Docker?
+Ans2. Docker is an open-source containerization platform by which you can pack your application and all its dependencies into a standardized unit called a container. Containers are light in weight which makes them portable and they are isolated from the underlying infrastructure and from each other container. You can run the docker image as a docker container in any machine where docker is installed without depending on the operating system.
+
+Docker is popular because of the following:
+1. Portability.
+2. Reproducibility.
+3. Efficiency.
+4. Scalability.
+
+######################################################################################################################################
+
+Q3. What is Dockerfile?
+Ans3. The Dockerfile uses DSL (Domain Specific Language) and contains instructions for generating a Docker image. Dockerfile will define the processes to quickly produce an image. While creating your application, you should create a Dockerfile in order since the Docker daemon runs all of the instructions from top to bottom.
+
+It is a text document that contains necessary commands which on execution help assemble a Docker Image.
+
+######################################################################################################################################
+
+Q4. What is Docker Image?
+Ans4. It is a file, comprised of multiple layers, used to execute code in a Docker container. They are a set of instructions used to create docker containers. Docker Image is an executable package of software that includes everything needed to run an application. This image informs how a container should instantiate, determining which software components will run and how. Docker Container is a virtual environment that bundles application code with all the dependencies required to run the application. The application runs quickly and reliably from one computing environment to another.
+
+######################################################################################################################################
+
+Q5. What is Docker Container?
+Ans5. Docker container is a runtime instance of an image. Allows developers to package applications with all parts needed such as libraries and other dependencies. Docker Containers are runtime instances of Docker images. Containers contain the whole kit required for an application, so the application can be run in an isolated way. For eg.- Suppose there is an image of Ubuntu OS with NGINX SERVER when this image is run with the docker run command, then a container will be created and NGINX SERVER will be running on Ubuntu OS.
+
+######################################################################################################################################
+
+Q6. What is Docker Hub?
+Ans6. Docker Hub is a repository service and it is a cloud-based service where people push their Docker Container Images and also pull the Docker Container Images from the Docker Hub anytime or anywhere via the internet. Generally it makes it easy to find and reuse images. It provides features such as you can push your images as private or public registry where you can store and share Docker images
+
+Mainly DevOps team uses the Docker Hub. It is an open-source tool and freely available for all operating systems. It is like storage where we store the images and pull the images when it is required. When a person wants to push/pull images from the Docker Hub they must have a basic knowledge of Docker. Let us discuss the requirements of the Docker tool.
+
+######################################################################################################################################
+
+Q7. What is Kubernetes?
+Ans7. Kubernetes is an open-source Container Management tool that automates container deployment, container scaling, descaling, and container load balancing (also called a container orchestration tool). It is written in Golang and has a vast community because it was first developed by Google and later donated to CNCF (Cloud Native Computing Foundation). Kubernetes can group ‘n’ number of containers into one logical unit for managing and deploying them easily. It works brilliantly with all cloud vendors i.e. public, hybrid, and on-premises. 

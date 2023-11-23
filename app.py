@@ -34,7 +34,7 @@ def predict_dimond_price():
             clarity=request.form.get("clarity")
         )
 
-        # converting data (filler in form) into dataframe
+        # converting data (filled in form) into dataframe
         final_data = data.get_data_into_dataframe()
 
         # class of PredictPipeline
