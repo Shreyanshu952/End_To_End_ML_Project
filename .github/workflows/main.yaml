@@ -1,8 +1,8 @@
-name: Build and push image to ECR
-on:
+name: Build and push image to ECR   #name of the objective of creating yaml file for deployment
+on:  #triggering point i.e. whenever we push our code into master branch, deployment will trigger
   push:
     branches:
-      - main
+      - master
 
 
 

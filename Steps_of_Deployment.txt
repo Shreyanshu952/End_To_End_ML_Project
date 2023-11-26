@@ -1,0 +1,24 @@
+1. You have to get ready your code in your local environment.
+
+2. You need to create your own repository in your github and then push this code into that repository.
+
+3. If i am performing CI/CD pipeline then this workflow is very important.
+3.1 Make sure you have .github/workflows/main.yaml in your directory.
+3.2 Make sure you have dockerfile as well since we are going to deploy our code in the form of docker image.
+3.3 Make sure in your app.py file, you have ""app.run(host="0.0.0.0", port=8080)"" otherwise there may be issues at later stage.
+
+4. You need to login or signup to your AWS account.
+
+5. You need to configure three things:
+5.1 You need to create i am user account and here you need to give admin access and you need to download key ID and secret key access.
+How to create a IAM user. Below is the path:
+<search IAM/ user/ create user/ attach policy/ Administrator access/ download the secret keys>
+5.2 You need to create ECR repository.
+5.3 You need to configure your app runner.
+
+6. You need to add your variable (KeyID and Secret access key) into your github repo as a secret variable.
+AWS_ACCESS_KEY_ID=""
+AWS_SECRET_ACCESS_KEY=""
+You have to add these in your github repo. Here is the path settings/Secrets and variables/Actions/Secret/New repository secret
+
+7. Make sure in the work flow, you have mentioned correct ECR repository name and you have mentioned correct ECR region as well.
