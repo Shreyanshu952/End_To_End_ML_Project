@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/iNeuron%20Course/End_To_End_ML_Project/mlruns/0/430adfc4194d40a188805763b8a16bb7/artifacts
+end_time: 1701451381982
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 430adfc4194d40a188805763b8a16bb7
+run_name: blushing-carp-665
+run_uuid: 430adfc4194d40a188805763b8a16bb7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701451381893
+status: 3
+tags: []
+user_id: shrut

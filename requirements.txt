@@ -7,3 +7,7 @@ matplotlib
 Flask
 
 -e .
+
+#installing MLOps packages
+mlflow==2.2.2  #this is more stable version
+dvc

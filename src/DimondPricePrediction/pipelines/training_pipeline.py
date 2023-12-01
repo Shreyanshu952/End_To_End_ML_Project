@@ -9,6 +9,7 @@ from src.DimondPricePrediction.exception import customexception
 from src.DimondPricePrediction.components.data_ingestion import DataIngestion
 from src.DimondPricePrediction.components.data_transformation import DataTransformation
 from src.DimondPricePrediction.components.model_trainer import ModelTrainer
+from src.DimondPricePrediction.components.model_evaluation import ModelEvaluation
 
 # creating an object of DataIngestion  and executing it
 obj = DataIngestion()
@@ -24,3 +25,8 @@ train_arr,test_arr=data_transformation.initialize_data_transformation(train_data
 model_trainer_obj=ModelTrainer()
 
 model_trainer_obj.initiate_model_training(train_arr,test_arr)
+
+# creating an object of ModelEvaluation and executing it
+model_evaluator_obj=ModelEvaluation()
+
+model_evaluator_obj.initiate_model_evaluation(test_arr)
