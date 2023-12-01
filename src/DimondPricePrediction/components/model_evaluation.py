@@ -50,9 +50,21 @@ class ModelEvaluation:
             # DAGshub can host our experiments and also register our model which can we seen to outside world
             # DAGshub is an open source platform
 
-            #writing code for setting local environment to DAGshub
+            # writing code for setting local environment to DAGshub
+
+            #The below line of code sets the MLflow registry URI. 
+            #The registry is a centralized location for storing and managing machine learning models.
+            #The "mlflow.set_registry_uri" function is used to set the URI of the model registry. 
+            #The model registry is a feature in MLflow that allows you to store and 
+            #organize different versions of machine learning models. 
+            #By setting the registry URI, you specify the location where MLflow will store information about registered models.
             mlflow.set_registry_uri("https://dagshub.com/Shreyanshu952/End_To_End_ML_Project.mlflow")
             
+            #The below line of code extracts the scheme (protocol) from the MLflow tracking URI and 
+            #assigns it to the variable tracking_url_type_store.
+            #mlflow.get_tracking_uri() retrieves the current MLflow tracking URI that is configured in the environment.
+            #urlparse is a Python function from the urllib.parse module that breaks down a URL into its components.
+            #.scheme extracts the scheme (protocol) from the URL, such as "https" or "http."
             tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
 
             logging.info(f"Type of store is {tracking_url_type_store}")
