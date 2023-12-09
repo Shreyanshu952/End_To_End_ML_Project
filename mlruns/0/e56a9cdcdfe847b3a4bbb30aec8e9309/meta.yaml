@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/iNeuron%20Course/End_To_End_ML_Project/mlruns/0/e56a9cdcdfe847b3a4bbb30aec8e9309/artifacts
+end_time: 1702139469963
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e56a9cdcdfe847b3a4bbb30aec8e9309
+run_name: salty-cub-153
+run_uuid: e56a9cdcdfe847b3a4bbb30aec8e9309
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702139466977
+status: 3
+tags: []
+user_id: shrut
